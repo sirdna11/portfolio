@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Inter:wght@200&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>AK portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logoimg" src="aklogobalts.png" alt="Andris klimkans logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projeckts" class="nav-link">Projects</a></li>
+                <li><a  href="#contact" class="nav-link " >Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <section class="home">
+        <div class="homepage" >
+            <div class="circle" data-aos="fade-left" ></div>
+            <h1 class="main" data-aos="fade-left" >Andris <br> Klimkāns</h1>
+            <div class="image1" data-aos="fade-left" >
+                <img  src="AK22 1.png" alt="andris klimkans photo">
+            </div>
+        </div>
+        <div class="homepagetext">
+            <h1 data-aos="fade-up" >FRONTEND DEVELOPER</h1>
+            <p data-aos="fade-up" >
+                I implement user interface design and solve user problems with HTML,
+                CSS AND Javascript. I have 2 years of making products that solve user 
+                problems and implementing responsive website.
+            </p>
+            <button onclick="modal()" data-aos="fade-up" >Contact me</button>
+        </div>
+    </section>
+    <section id="about" class="aboutme">
+        <div class="aboutmepage" >
+            <div class="circle2" data-aos="fade-right" ></div>
+            <h1 class="main2" data-aos="fade-right" >About</h1>
+            <div class="image2" data-aos="fade-right" >
+                <img  src="AK22 2.png" alt="andris klimkans photo fliped">
+            </div>
+            <h1 class="me" data-aos="fade-right" >me</h1>
+        </div>
+        <div class="aboutmetext" >
+            <p data-aos="fade-up">
+                I implement user interface design and solve user problems with HTML, CSS AND Javascript. 
+                I have 2 years of making products that solve user problems and implementing responsive website.
+                I implement user interface design and solve user problems with HTML, CSS AND Javascript.
+                I have 2 years of making products that solve user problems and implementing responsive website.
+                I implement user interface design and solve user problems with HTML, CSS AND Javascript. 
+                I have 2 years of making products that solve user problems and implementing responsive website.
+            </p>
+            <button onclick="modal()" data-aos="fade-up" >Contact me</button>
+        </div>
+    </section>
+    <div class="title">
+        <h1 data-aos="fade-up" id="projeckts">Projects</h1>
+    </div>
+    <section class="projeckts" >
+            <div data-aos="fade-up" ><p>coming soon!!!</p> </div>
+            <div data-aos="fade-up" ><p>coming soon!!!</p></div>
+            <div data-aos="fade-up" ><p>coming soon!!!</p></div>
+            <div data-aos="fade-up" ><p>coming soon!!!</p></div>
+            <div data-aos="fade-up" ><p>coming soon!!!</p></div>  
+    </section>
+    <section class="contact" id="contact">
+        <div class="contactdiv">
+            <img  onclick="modal()" src="Message circle.svg" alt="Message circle">
+            <p> have a project in mind?</p>
+            <h4>Contact me!</h4>
+            <h1>sirdna11@gmail.com</h1>
+            <h1>+37120087543</h1>
+        </div>
+    </section>
+    <footer>
+        <div class="logo2">
+            <img class="logoimg2" src="aklogobalts.png" alt="Andris klimkans logo">
+        </div>
+        <nav>
+            <ul class="footerul">
+                <li><a href=""><img src="github (1).svg" alt="github logo"></a></li>
+                <li><a href=""><img src="instagram (7) 1.svg" alt="instagram logo"></a></li>
+                <li><a href=""><img src="linkedin.svg" alt="linkedin logo"></a></li>
+                <li><a href=""><img src="twitter (1).svg" alt="twiter logo"></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <form action="#" method="get" class="contact-form" onsubmit="sendEmail()" >
+                <input type="text" placeholder="Name and surname" id="name" name="name" required>
+                <input type="text" placeholder="E-mail" id="e-mail" name="email" required type="email">
+                <input type="text" placeholder="What’s in your mind?" id="massage" name="massage"  class="textarea" required >
+                <button class="modulebtn" onclick="closemodal()" type="submit"  >submit</button>
+            </form>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1500
+    });
+  </script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("-fyQBQXsgvh2fGx3W");
+   })();
+</script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
